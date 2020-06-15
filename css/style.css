@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
 }
 
 #main {
@@ -25,6 +26,10 @@
   opacity: 0;
   transition: all 0.35s ease-in-out;
   z-index: 10;
+}
+
+#main #ticket p {
+  text-transform: uppercase;
 }
 
 #main #ticket:hover {
