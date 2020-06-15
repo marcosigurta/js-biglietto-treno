@@ -25,9 +25,9 @@ console.log(discount40);
 //Calculating Price with discount based on Age
 
 if (age < 18) {
-    ticketPrice = (price - discount20).toFixed(2);
+    ticketPrice = price - discount20;
 } else if (age > 65) {
-    ticketPrice = (price - discount40).toFixed(2);
+    ticketPrice = price - discount40;
 } else {
     ticketPrice = price;
 }
@@ -43,7 +43,7 @@ document.getElementById('age').innerHTML = age;
 
 document.getElementById('ticketNumber').innerHTML = Math.floor((Math.random() * 1000) + 1);
 
-document.getElementById('ticketDetails').innerHTML = "Ticket Price: " + ticketPrice + " €";
+document.getElementById('ticketDetails').innerHTML = "Ticket Price: " + ticketPrice.toFixed(2) + " €";
 
 
 
